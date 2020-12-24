@@ -120,6 +120,7 @@ public class Client extends javax.swing.JFrame {
      */
     public Client() {
         initComponents();
+        this.setExtendedState(this.getExtendedState() | Client.MAXIMIZED_BOTH);
         receive.start();
 
         addKeyListener(keyAdapter);
